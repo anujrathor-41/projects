@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        h1{
+            padding: 20px 0px;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px 15px;
+            margin: 20px 0px;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <h1>Welcome to Wscubetech</h1>
+    <!-- inline event.. per chata hai -->
+    <button onclick="document.write(prompt('Please enter your name'))">click me</button>
+    
+</body>
+<script>
+    // structure nahi kahaya when you write in script tag
+    // internal js main events per kaam nahi karte
+    document.write(prompt('Plese enter your name'))
+
+
+</script>
+</html>

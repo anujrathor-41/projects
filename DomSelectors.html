@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selectors</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #main{
+            width: 800px;
+            padding: 15px;
+            margin: 50px auto;
+            border: 0.1px solid red;
+            
+        }
+        .boxes{
+            padding: 10px;
+            border: 0.1px solid black;
+            justify-content: space-around;
+            display: flex;
+            
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border: 0.1px solid black;
+        }
+        #btns{
+            padding: 10px;
+            margin: 10px 0px;
+            border: 0.1px solid green;
+            display: flex;
+            justify-content: space-around;
+
+            
+        }
+        button{
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="boxes">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+
+        </div>
+        <div id="btns">
+            <button>B1</button> 
+            <button>B2</button>
+            <button>B3</button>
+
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    let x=document.querySelectorAll('#main');
+
+    let boxes=document.querySelectorAll('.box');
+    let btns =document.querySelectorAll('button');
+    let btn1=btns[0];
+    console.log(btn1);
+
+
+
+
+
+
+
+
+    // query sirf ek ko hi pakdta hai
+    // let x=document.querySelector('#main');
+
+    // let boxes=document.querySelector('.box');
+
+    // let btn =document.querySelector('button');
+
+    
+
+    // console.log(btn);
+    // let main=document.getElementById('main');
+
+    // let boxes=document.getElementsByClassName('box');
+    // let box1=boxes[0];
+    // let box2=boxes[1];
+
+    // let btns=document.getElementsByTagName('button');
+    // let btn1=btns[0];
+    // let btn2=btns[1];
+    // let btn3=btns[2];
+    // console.log(btn2);
+
+
+</script>
+</html>

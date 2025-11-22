@@ -1,0 +1,42 @@
+type conversion function:
+
+1. Number()
+2. parseInt()
+3. paeseFloat()
+4. Boolean()
+5. String()
+
+Event in js
+
+1) onload
+2) onclick
+3) onmouseover
+4) onmouseout
+
+Pre-defined function
+
+1) alert()
+2) confirm()
+3) prompt()
+4) typeof()
+5) document.write()
+6) console.log()
+
+DOM important topic
+
+Dynamic changes :
+1) text
+2) attributes
+3) css prop
+4) html structure
+
+Dom selectors:
+class ,id, tag name
+
+ align-items: center;-> text jo hai->height wise centre main aa jayega
+ justify-content: center;-> text->horizontal wise centre main aa jayega
+
+ getElementById->html collectio dega
+ queryselector-> nodelist
+
+
