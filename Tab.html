@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 70%;
+            /* height: 200px; */
+            margin: 50px auto;
+            /* border: 0.1px solid red; */
+        }
+
+        .tabs {
+            /* border: 0.1px solid red; */
+        }
+
+        .tabs ul {
+            gap: 10px;
+            display: flex;
+        }
+
+        .tabs>ul>li {
+            padding: 10px 20px;
+            margin: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border: 0.1px solid red;
+
+
+        }
+
+        .tabContentGroup {
+            /* height: 200px; */
+            
+            /* border: 0.1px solid red; */
+
+        }
+
+        .tabContent {
+            font-size: 20opx;
+            border: 0.1px solid red;
+            padding: 20px;
+            display: none;
+        }
+        .activeTab{
+            background: #FFA500;
+            color: white;
+        }
+        .activeTabContent{
+            display: block;
+        }
+        
+    </style>
+</head>s
+
+<body>
+    <div class="main">
+        <div class="tabs">
+            <ul>
+                <li class="activeTab">Mission </li>
+                <li >Vision</li>
+                <li >Values</li>
+            </ul>
+
+        </div>
+        <div class="tabContentGroup">
+            <div class="tabContent activeTabContent ">
+                hey 
+
+            </div>
+            <div class="tabContent">
+                hello
+
+            </div>
+            <div class="tabContent">
+                bye
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+    let tabs=document.querySelectorAll('li');
+    let tabContent=document.querySelectorAll('.tabContent');
+    
+    
+    tabs.forEach(
+        (tab,index)=>{
+            tab.addEventListener('click',
+                ()=>{
+                    tabs.forEach(
+                        (v,i)=>{
+                            v.classList.remove('activeTab');
+                            tabContent[i].classList.remove('activeTabContent');
+
+                            if(i==index){
+                                v.classList.add('activeTab');
+
+                                tabContent[i].classList.add('activeTabContent');
+                            }
+
+                        }
+                    )
+                }
+            )
+
+        }
+    )
+</script>
+
+</html>
